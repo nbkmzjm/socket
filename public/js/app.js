@@ -5,7 +5,7 @@ socket.on('connect', function (){
 })
 
 socket.on('message', function (message){
-	$('#msg-monitor').append('<p>'+message.text+'<p>');
+	$('#msg-monitor').append('<p>'+message.time+ ': ' +message.text+'<p>');
 })
 
 $('#msg-form').on('submit', function (event){
